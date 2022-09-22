@@ -1,9 +1,10 @@
 import "package:flutter/material.dart";
 import 'package:flutter_tut/pages/homepage.dart';
 import 'package:flutter_tut/pages/login_page.dart';
+import "package:google_fonts/google_fonts.dart";
 
 void main() {
-  runApp(MeraApp());
+  runApp(const MeraApp());
 }
 
 class MeraApp extends StatelessWidget {
@@ -14,7 +15,9 @@ class MeraApp extends StatelessWidget {
     // ignore: prefer_const_constructors
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.brown),
+      theme: ThemeData(
+          primarySwatch: Colors.brown,
+          fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(brightness: Brightness.dark),
       // Default initial route is "/", but can change it using this:
       initialRoute: "/home",
