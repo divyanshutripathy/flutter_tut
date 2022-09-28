@@ -96,7 +96,7 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.circular(changeButton ? 50 : 8),
                 color: Colors.brown,
                 // InkWell is like <a> tag for the button, gives us onTap,
-                // But it also gives us animations, by default the ripple effect,
+                // But it also gives us animations, by default, the ripple effect,
                 // Only works properly when predecessor is Material
                 child: InkWell(
                   onTap: () => handleLogin(context),
