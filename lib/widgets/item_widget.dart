@@ -18,6 +18,9 @@ class ItemWidget extends StatelessWidget {
           textScaleFactor: 1.5,
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        onTap: () {
+          print("${item.name} pressed");
+        },
       ),
     );
   }
